@@ -101,7 +101,7 @@ function Main() {
             <Button
               style={{ margin: "10px" }}
               variant="contained"
-              onClick={() => handleSubmit()}
+              onClick={(event) => handleSubmit(event)}
             >
               Add to Watchlist
             </Button>
