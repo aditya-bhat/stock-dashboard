@@ -1,23 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
+import Main from "./components/Main"
+import TextField from '@mui/material/TextField';
+
 
 function App() {
+  document.title = "Stock Market Dashboard";
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="App-header">
+      <h4>Stock Dashboard</h4>
+        <Main></Main>
+      </div>
     </div>
   );
 }
